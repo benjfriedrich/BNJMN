@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[link](https://apple.com)"
+title:  "[I needed a longer name for my link](https://apple.com)"
 date:   2019-01-26 8:20:57 -0600
 categories: link
 tag: link

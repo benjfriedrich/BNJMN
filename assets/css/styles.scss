@@ -1,12 +1,157 @@
 ---
 ---
-@import "main";
-
 $font-stack: Verdana, Tahoma, Helvetica, sans-serif;
 
 body {
   font-family: $font-stack;
   background: white;
-  max-width: 800px;
+  max-width: 600px;
+  margin: 0px auto;
+  display: block;
+  padding: 15px;
 
+}
+p {
+  font-size: 11pt;
+  line-height: 17pt;
+}
+
+
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+a:active {
+  color: grey;
+  text-decoration: none;
+}
+
+.date {
+  font-size: 10pt;
+  font-weight: normal;
+
+}
+
+header {
+  margin: 45px 0 45px 0;
+  display: block;
+  height: 25px;
+
+  img.logo {
+    height: 100%;
+    display: inline;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  nav {
+    float: left;
+    display: block;
+
+    a {
+      font-size: 9pt;
+      vertical-align: middle;
+    }
+
+  }
+
+}
+
+main {
+  display: block;
+
+  h2 {
+    font-size: 15pt;
+    font-weight: normal;
+    text-indent: -20pt;
+    padding-left: 20pt;
+    line-height: 17pt;
+  }
+
+
+  img {
+    width: 100%;
+    margin: 0px;
+  }
+  article{
+    margin: 0 0 80px 0;
+
+  }
+  article.feature {
+    text-indent: 1.5em;
+
+    img.sig {
+      max-width: 30px;
+      position: relative;
+      bottom: -8px;
+    }
+    .break-marks {
+      text-align: center;
+      font-size: 20pt;
+    }
+  }
+
+  article.aside {
+    text-indent: 0;
+  }
+
+  .aside-bnjmn {
+    font-weight: bold;
+  }
+
+  article.image {
+    .img-caption {
+      margin: 5px 0 0 0;
+      font-style: italic;
+      font-weight: lighter;
+      padding-right: 1.5em;
+      text-align: right;
+    }
+    p {
+      margin: 5px 0;
+      text-indent: 1.5em;
+    }
+  }
+
+  article.link {
+    h3 {
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 12pt;
+      text-indent: -15px;
+      padding-left: 15px;
+    }
+    a:link {
+      text-decoration: underline;
+    }
+    a:hover {
+      color: grey;
+      text-decoration: none;
+
+    }
+
+    p {
+      text-indent: 1.5em;
+    }
+
+  }
+
+
+}
+
+footer {
+  text-align: center;
+  font-size: 9pt;
 }

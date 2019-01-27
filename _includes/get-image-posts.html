@@ -2,11 +2,13 @@
 
 <article class="image">
 
+<p><span class="date">Posted: {{ post.date | date: "%-m/%-d/%y" }}</span></p>
+{{ post.title | prepend: "!" | markdownify | remove_first: "<p>" | remove_last: "</p>" }}
 
-{{ post.title | prepend: "!" | markdownify}}
-
-{{ post.content }}
+<p class="img-caption">{{ post.content | remove_first: "<p>" | remove_last: "</p>" }}</p>
 
 </article>
+
+
 
 {% endif %}
