@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "[Ashi Magari](/assets/photos/ashi.jpg)"
+date:   2019-01-26 10:20:57 -0600
+categories: image
+tag: image
+---
+This is a photo of Ashi

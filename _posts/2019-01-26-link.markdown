@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "[link](https://apple.com)"
+date:   2019-01-26 8:20:57 -0600
+categories: link
+tag: link
+---
+These are my interesting and insightful comments on this link. Look how smart I am.

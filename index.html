@@ -1,0 +1,24 @@
+---
+layout: default
+title: Home
+content: This is content
+---
+
+{% include header.html %}
+
+<main class="posts">
+
+
+  {% for post in site.posts %}
+    {% include get-link-posts.html %}
+    {% include get-feature-posts.html %}
+
+    {% include get-aside-posts.html %}
+    {% include get-image-posts.html %}
+
+  {% endfor %}
+
+
+</main>
+
+{% include footer.html %}

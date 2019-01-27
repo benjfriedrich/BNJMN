@@ -1,0 +1,12 @@
+---
+---
+@import "main";
+
+$font-stack: Verdana, Tahoma, Helvetica, sans-serif;
+
+body {
+  font-family: $font-stack;
+  background: white;
+  max-width: 800px;
+
+}

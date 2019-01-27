@@ -1,0 +1,12 @@
+{% if post.tag == "image" %}
+
+<article class="image">
+
+
+{{ post.title | prepend: "!" | markdownify}}
+
+{{ post.content }}
+
+</article>
+
+{% endif %}

@@ -1,0 +1,12 @@
+{% if post.tag == "link" %}
+
+<article class="link">
+
+
+<h3>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}<span class="date">{{ post.date | date: "%-m/%-d/%y" }}</span></h3>
+
+{{ post.content }}
+
+</article>
+
+{% endif %}
