@@ -3,10 +3,11 @@
 <article class="link">
 
 
-<h3>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}<span class="date">{{ post.date | date: "%-m/%-d/%y" }}</span></h3>
+<h3><span style="font-size: 28px;">↬ </span>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}<span class="date">{{ post.date | date: "%-m/%-d/%y" }}</span></h3>
 
 {{ post.content }}
 
 </article>
+
 
 {% endif %}

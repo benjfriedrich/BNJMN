@@ -1,9 +1,10 @@
 ---
 ---
 $font-stack: Verdana, Tahoma, Helvetica, sans-serif;
+$title-font-stack: Trebuchet, Trebuchet MS, Helvetica, sans-serif;
 
 $break-small: 360px;
-$break-medium: 410px;
+$break-medium: 390px;
 $break-full: 600px;
 
 body {
@@ -16,7 +17,7 @@ body {
 
 }
 p {
-  font-size: 11pt;
+  font-size: 10.5pt;
   line-height: 19pt;
 }
 
@@ -43,29 +44,42 @@ a:active {
 }
 
 .date {
+  font-family: $font-stack;
   font-size: 10pt;
   font-weight: normal;
+  letter-spacing: 0;
 
 }
 
 header {
-  margin: 45px 0 45px 0;
+  margin: 50px 0 100px 0;
   display: block;
   height: 25px;
 
   @media screen and (min-width:$break-small) {
-    height: 35px;
+    height: 38px;
   }
 
   @media screen and (min-width:$break-medium) {
-    height: 50px;
+    height: 45px;
   }
+
+  @media screen and (min-width:$break-full) {
+    height: 55px;
+    margin: 120px 0 120px 0;
+  }
+
 
   img.logo {
     height: 100%;
 
     float: left;
-    margin: 0 7px 0 0;
+    margin: 0 9px 0 0;
+
+    @media screen and (min-width:$break-full) {
+      margin: 0 15px 0 0;
+    }
+
   }
 
   nav {
@@ -84,14 +98,15 @@ header {
         margin: 0px;
       }
 
-
-
-
-
     a {
       font-size: 9pt;
+      height: 100%;
+      @media screen and (min-width:$break-full) {
+        font-size: 11pt;
+        }
+      }
 
-    }
+
 
   }
 
@@ -100,12 +115,25 @@ header {
 main {
   display: block;
 
+  .break-marks {
+    text-align: center;
+    font-size: 15pt;
+  }
+
   h2 {
     font-size: 15pt;
     font-weight: normal;
     text-indent: -20pt;
     padding-left: 20pt;
     line-height: 17pt;
+    font-family: $title-font-stack;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+      @media screen and (min-width:$break-full) {
+        margin-bottom: 30px;
+      }
   }
 
 
@@ -113,22 +141,21 @@ main {
     width: 100%;
     margin: 0px;
   }
+
+  img.sig {
+    max-width: 30px;
+    position: relative;
+    bottom: -8px;
+  }
+
   article{
-    margin: 0 0 80px 0;
+    margin: 50px 0 40px 0;
 
   }
   article.feature {
     text-indent: 1.5em;
 
-    img.sig {
-      max-width: 30px;
-      position: relative;
-      bottom: -8px;
-    }
-    .break-marks {
-      text-align: center;
-      font-size: 20pt;
-    }
+
   }
 
   article.aside {
@@ -137,19 +164,25 @@ main {
 
   .aside-bnjmn {
     font-weight: bold;
+    font-family: $title-font-stack;
   }
 
   article.image {
     .img-caption {
-      margin: 5px 0 0 0;
+      margin: 0 0 15px 0;
       font-style: italic;
       font-weight: lighter;
       padding-right: 1.5em;
       text-align: right;
     }
+    .image-title {
+      font-family: $title-font-stack;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
     p {
-      margin: 5px 0;
-      text-indent: 1.5em;
+      text-indent: 1em;
+      margin: 0;
     }
   }
 
@@ -160,6 +193,8 @@ main {
       font-size: 12pt;
       text-indent: -15px;
       padding-left: 15px;
+      font-family: $title-font-stack;
+      line-height: 16pt;
     }
     a:link {
       text-decoration: underline;
