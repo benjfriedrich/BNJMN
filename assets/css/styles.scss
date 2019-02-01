@@ -7,15 +7,47 @@ $break-small: 360px;
 $break-medium: 390px;
 $break-full: 600px;
 
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: $font-stack;
   background: white;
   max-width: 500px;
   margin: 0px auto;
-  display: block;
-  padding: 15px;
+  padding: 15px 15px 0px 15px;
 
 }
+
+.page-wrapper {
+   min-height: calc(100vh - 160px);
+}
+
+main {
+  padding-bottom: 35px;
+
+
+}
+
+.secondary-page {
+  margin-top: -40px;
+
+  p {
+    text-indent: 1.5em;
+  }
+}
+
+
+footer {
+
+  text-align: center;
+  font-size: 9pt;
+  height: 35px;
+  margin-top: -35px;
+}
+
 p {
   font-size: 10.5pt;
   line-height: 19pt;
@@ -120,6 +152,16 @@ main {
     font-size: 15pt;
   }
 
+  h1 {
+    font-size: 17pt;
+    font-weight: normal;
+    font-family: $title-font-stack;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+
+  }
+
   h2 {
     font-size: 15pt;
     font-weight: normal;
@@ -149,7 +191,7 @@ main {
   }
 
   article{
-    margin: 50px 0 40px 0;
+    margin: 50px 0 50px 0;
 
   }
   article.feature {
@@ -212,9 +254,4 @@ main {
   }
 
 
-}
-
-footer {
-  text-align: center;
-  font-size: 9pt;
 }

@@ -1,13 +1,7 @@
 ---
 layout: default
 title: Home
-content: This is content
 ---
-
-{% include header.html %}
-
-<main class="posts">
-
 
   {% for post in site.posts %}
     {% include get-link-posts.html %}
@@ -20,5 +14,3 @@ content: This is content
 
 
 </main>
-
-{% include footer.html %}
