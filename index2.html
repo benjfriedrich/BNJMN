@@ -1,12 +1,9 @@
 ---
 layout: default
-pagination:
-  enabled: true
-
+title: Home
 ---
 
-  {% for post in paginator.posts %}
-
+  {% for post in site.posts %}
     {% include get-link-posts.html %}
     {% include get-feature-posts.html %}
 
@@ -14,8 +11,6 @@ pagination:
     {% include get-image-posts.html %}
 
   {% endfor %}
-
-    {% include get-pagination.html %}
 
 
 </main>
