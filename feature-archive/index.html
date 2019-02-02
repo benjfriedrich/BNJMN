@@ -1,0 +1,15 @@
+---
+layout: default_two
+title: Archives
+pagination:
+  enabled: true
+  tag: feature
+---
+
+{% include get-archive-nav.html %}
+
+{% for post in paginator.posts %}
+  {% include get-feature-posts.html %}
+{% endfor %}
+
+ {% include get-pagination.html %}

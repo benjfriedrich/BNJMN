@@ -1,0 +1,18 @@
+
+
+{% assign link-count = site.data.archive-nav | map: "name" | size | minus: 1 %}
+
+
+<div class="archive-nav">
+
+<ul>
+  {% for item in site.data.archive-nav %}
+
+  {% assign counter = counter | plus: 1 %}
+
+    <li><a href="{{ item.link }}" {% if page.dir == item.link %}class="selected"{% endif %}>{{ item.name }}</a></li> {% if counter  <= {{link-count}} %} | {% endif %}
+  {% endfor %}
+</ul>
+
+
+</div>

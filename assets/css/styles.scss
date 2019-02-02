@@ -26,6 +26,11 @@ body {
 
 }
 
+ul li {
+  display: inline;
+  list-style: none;
+}
+
 .page-wrapper {
    min-height: calc(100vh - 160px);
 }
@@ -56,6 +61,7 @@ footer {
 p {
   font-size: 10.5pt;
   line-height: 19pt;
+  margin: 15px 0;
 }
 
 
@@ -157,6 +163,21 @@ main {
     font-size: 15pt;
   }
 
+  .archive-nav {
+    font-family: $title-font-stack;
+    text-align: center;
+    font-size: 12pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    a {
+      font-size: 13pt;
+      }
+      .selected {
+        text-decoration: underline;
+    }
+  }
+
   h1 {
     font-size: 17pt;
     font-weight: normal;
@@ -196,7 +217,7 @@ main {
   }
 
   article{
-    margin: 50px 0 50px 0;
+    margin: 70px 0 50px 0;
 
   }
   article.feature {
@@ -268,11 +289,7 @@ main {
       text-decoration: underline;
         }
     }
-      ul li {
-        display: inline;
-        list-style: none;
 
-      }
 
 
   }
