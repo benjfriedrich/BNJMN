@@ -1,8 +1,8 @@
-{% if post.tag == "image" %}
+{% if post.tag == "photo" %}
 
-<article class="image">
+<article class="photo">
 
-<p><span class="image-title">{{ post.title }}</span> <span class="date">{{ post.date | date: "%-m/%-d/%y" }}</span></p>
+<p><span class="photo-title">{{ post.title }}</span> <span class="date">{{ post.date | date: "%-m/%-d/%y" }}</span></p>
 {{ post.link | prepend: "!" | markdownify | remove_first: "<p>" | remove_last: "</p>" }}
 
 <p class="img-caption">{{ post.content | remove_first: "<p>" | remove_last: "</p>" }}</p>
