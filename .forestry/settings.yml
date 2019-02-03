@@ -16,8 +16,8 @@ sections:
 - type: document
   path: projects.html
   label: Projects
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: assets/photos
+public_path: "/assets/photos"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
