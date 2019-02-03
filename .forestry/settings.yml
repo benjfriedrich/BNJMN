@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: projects.html
-  label: Projects
-  match: "**/*"
 - type: jekyll-posts
   label: Posts
   create: all
@@ -17,7 +13,9 @@ sections:
 - type: document
   path: about.md
   label: About
-  match: "**/*"
+- type: document
+  path: projects.html
+  label: Projects
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
