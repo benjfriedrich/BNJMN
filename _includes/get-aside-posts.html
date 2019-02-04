@@ -1,13 +1,9 @@
 {% if post.tag == "aside" %}
 
-
 <article class="aside">
-
 
 <p><span class="aside-bnjmn">//BNJMN</span><span class="date"> ({{ post.date | date: "%-m/%-d/%y" }}):</span> {{ post.content | remove_first: "<p>" | remove_last: "</p>" }}</p>
 
 </article>
-
-
 
 {% endif %}

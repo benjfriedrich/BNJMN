@@ -1,0 +1,50 @@
+{% if page.tag == "feature" %}
+
+  <article class="feature">
+
+  <h2>❖ <a href="{{ page.url }}">{{ page.title }}</a> <span class="date">{{ page.date | date: "%-m/%-d/%y" }}</span></h2>
+
+  {{ page.content }}
+
+  </article>
+
+  <p class="break-marks">❖ <img class="sig" src="/assets/sig.svg" alt=""> ❖</p>
+
+{% endif %}
+
+
+{% if page.tag == "photo" %}
+
+  <article class="photo">
+
+  <p><span class="photo-title"><a href="{{ page.url }}">{{ page.title }}</a></span> <span class="date">{{ page.date | date: "%-m/%-d/%y" }}</span></p>
+  {{ page.link | prepend: "!" | markdownify | remove_first: "<p>" | remove_last: "</p>" }}
+
+  <p class="img-caption">{{ page.content | remove_first: "<p>" | remove_last: "</p>" }}</p>
+
+  </article>
+
+{% endif %}
+
+
+{% if page.tag == "link" %}
+
+  <article class="link">
+
+  <h3><span style="font-size: 28px;">↬ </span>{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}<span class="date">{{ page.date | date: "%-m/%-d/%y" }}</span></h3>
+
+  {{ page.content }}
+
+  </article>
+
+{% endif %}
+
+{% if page.tag == "aside" %}
+
+  <article class="aside">
+
+  <p><span class="aside-bnjmn">//BNJMN</span><span class="date"> ({{ page.date | date: "%-m/%-d/%y" }}):</span> {{ page.content | remove_first: "<p>" | remove_last: "</p>" }}</p>
+
+  </article>
+
+{% endif %}
