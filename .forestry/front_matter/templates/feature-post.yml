@@ -21,3 +21,6 @@ fields:
   description: Input post title
   config:
     required: true
+- type: datetime
+  name: date
+  label: Date
