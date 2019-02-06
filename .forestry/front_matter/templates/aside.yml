@@ -24,5 +24,6 @@ fields:
   hidden: true
   config:
     required: true
+  default: aside
 pages:
 - _posts/aside.md
