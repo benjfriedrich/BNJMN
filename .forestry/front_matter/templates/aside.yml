@@ -3,13 +3,6 @@ label: Aside
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  name: title
-  label: title
-  hidden: false
-  config:
-    required: true
-  default: Aside
 - type: datetime
   name: date
   label: Date
