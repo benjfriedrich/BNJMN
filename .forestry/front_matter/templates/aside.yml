@@ -1,0 +1,25 @@
+---
+label: Aside
+hide_body: false
+is_partial: false
+fields:
+- type: tag_list
+  name: tag
+  label: Tag
+  hidden: true
+  default:
+  - aside
+- type: datetime
+  name: date
+  label: Date
+  hidden: true
+  config:
+    required: true
+    display_utc: false
+- type: text
+  name: title
+  label: title
+  hidden: true
+  config:
+    required: true
+  default: Aside
