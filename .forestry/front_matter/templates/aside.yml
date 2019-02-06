@@ -12,7 +12,7 @@ fields:
 - type: datetime
   name: date
   label: Date
-  hidden: true
+  hidden: false
   config:
     required: true
     display_utc: false
