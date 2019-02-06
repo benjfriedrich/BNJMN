@@ -23,3 +23,5 @@ fields:
   config:
     required: true
   default: Aside
+pages:
+- _posts/aside.md
