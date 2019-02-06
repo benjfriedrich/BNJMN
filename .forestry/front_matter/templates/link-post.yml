@@ -1,30 +1,38 @@
 ---
 label: Link Post
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: post
 - name: title
   label: Title
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: link
   label: Link
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: date
   label: Date
   type: datetime
   hidden: false
   default: ''
-- name: tag
-  label: Tag
-  type: tag_list
-  hidden: false
-  default: ''
+  config:
+    required: true
+- type: text
+  name: tag
+  label: tag
+  hidden: true
+  config:
+    required: true
+  default: link
