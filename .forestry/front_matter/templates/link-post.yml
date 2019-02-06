@@ -1,0 +1,30 @@
+---
+label: Link Post
+hide_body: 
+is_partial: 
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: link
+  label: Link
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: tag
+  label: Tag
+  type: tag_list
+  hidden: false
+  default: ''
