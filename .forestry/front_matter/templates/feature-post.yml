@@ -1,0 +1,23 @@
+---
+label: Feature Post
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Layout
+  name: layout
+  hidden: true
+  config:
+    required: true
+  default: post
+- type: tag_list
+  hidden: true
+  label: Tag
+  name: tag
+  description: feature
+- type: text
+  name: title
+  label: Title
+  description: Input post title
+  config:
+    required: true
