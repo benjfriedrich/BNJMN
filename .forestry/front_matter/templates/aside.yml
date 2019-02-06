@@ -27,3 +27,4 @@ fields:
   default: aside
 pages:
 - _posts/aside.md
+- _posts/aside-1.md
