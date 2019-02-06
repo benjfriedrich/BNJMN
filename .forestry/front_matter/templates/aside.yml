@@ -24,4 +24,4 @@ fields:
     required: true
   default: Aside
 pages:
-- _posts/aside.md
+- _posts/2019-02-06-aside.md
