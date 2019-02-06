@@ -3,12 +3,13 @@ label: Aside
 hide_body: false
 is_partial: false
 fields:
-- type: tag_list
-  name: tag
-  label: Tag
-  hidden: true
-  default:
-  - aside
+- type: text
+  name: title
+  label: title
+  hidden: false
+  config:
+    required: true
+  default: Aside
 - type: datetime
   name: date
   label: Date
@@ -17,11 +18,11 @@ fields:
     required: true
     display_utc: false
 - type: text
-  name: title
-  label: title
-  hidden: false
+  name: tag
+  label: Tag
+  description: aside
+  hidden: true
   config:
     required: true
-  default: Aside
 pages:
 - _posts/2019-02-06-aside.md
