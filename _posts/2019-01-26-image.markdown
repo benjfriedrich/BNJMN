@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Ashi Magari
-link: "[Ashi Magari](/assets/photos/ashi.jpg)"
+link: "/assets/photos/ashi.jpg"
 date:   2019-01-26 10:20:57 -0600
 categories: photo
 tag: photo
