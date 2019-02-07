@@ -30,3 +30,5 @@ fields:
   type: tag_list
   hidden: true
   default: ''
+pages:
+- _posts/house-on-the-rock.md
