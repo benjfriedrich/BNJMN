@@ -25,10 +25,10 @@ fields:
   type: datetime
   hidden: false
   default: ''
-- name: tag
-  label: Tag
-  type: tag_list
+- type: text
+  name: tag
+  label: tag
   hidden: true
-  default: ''
-pages:
-- _posts/house-on-the-rock.md
+  config:
+    required: true
+  default: photo
