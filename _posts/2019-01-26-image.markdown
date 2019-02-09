@@ -3,7 +3,6 @@ layout: post
 title:  Ashi Magari
 link: "/assets/photos/ashi.jpg"
 date:   2019-01-26 10:20:57 -0600
-categories: photo
 tag: photo
 ---
 This is a photo of Ashi
