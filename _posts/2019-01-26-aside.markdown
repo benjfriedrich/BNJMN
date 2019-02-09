@@ -1,8 +1,0 @@
----
-layout: post
-title:  ""
-date:   2019-01-26 12:20:57 -0600
-categories: aside
-tag: aside
----
-This post is an aside. It's brief and punchy. Sort of like a tweet I suppose. Or a log of some sort.
