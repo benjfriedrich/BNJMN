@@ -18,3 +18,5 @@ fields:
   config:
     required: true
   default: aside
+pages:
+- _posts/SSL.md
