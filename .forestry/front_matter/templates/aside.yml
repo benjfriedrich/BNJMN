@@ -18,6 +18,3 @@ fields:
   config:
     required: true
   default: aside
-pages:
-- _posts/2019-02-06-aside-1.md
-- _posts/2019-02-06-aside.md

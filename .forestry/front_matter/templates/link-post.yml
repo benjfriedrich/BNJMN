@@ -36,3 +36,5 @@ fields:
   config:
     required: true
   default: link
+pages:
+- _posts/netlify-static-site-hosting-service.md
