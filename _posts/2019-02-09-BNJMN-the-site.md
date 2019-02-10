@@ -9,7 +9,7 @@ There are two reasons this website exists. The most sensible one is that I miss 
 
 The other reason is that I wanted to try out a new (to me) web development stack I think is interesting. When I build a site from scratch I’ve mostly used Wordpress as the content management system (CMS). Wordpress is fine but has drawbacks. It can be unwieldy and overbuilt for a lot of uses, setting up a Wordpress site so it runs fast can be finicky, and the whole software and plugin overhead around Wordpress can bloat up really quickly.
 
-Instead, I wanted to set up this site as a static generated site, which I think turned out great. I ended up with this lightweight, fast site, that I’m able to host totally free, and I can make work in the way that suits me.
+Instead, I wanted to set up this site as a static generated site, which I think turned out great. I ended up with this lightweight, fast site that I’m able to host totally free, and I can make work in the way that suits me.
 
 The rest of this post is about the technical side of the site, so if you’re interested, read on!
 
