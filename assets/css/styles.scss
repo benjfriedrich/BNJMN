@@ -205,6 +205,22 @@ main {
       }
   }
 
+  h3 {
+  font-size: 13pt;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  font-family: $title-font-stack;
+  text-align: center;
+  @media screen and (min-width:$break-full) {
+        margin-bottom: 30px;
+        margin-top: 45px;
+      }
+
+  }
+
 
   img {
     width: 100%;
