@@ -37,4 +37,4 @@ fields:
     required: true
   default: link
 pages:
-- _posts/netlify-static-site-hosting-service.md
+- _posts/52-failures-glow.md
