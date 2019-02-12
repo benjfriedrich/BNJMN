@@ -32,3 +32,5 @@ fields:
   config:
     required: true
   default: photo
+pages:
+- _posts/25-below.md
