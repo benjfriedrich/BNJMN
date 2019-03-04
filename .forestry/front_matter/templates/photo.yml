@@ -33,6 +33,7 @@ fields:
     required: true
   default: photo
 pages:
+- _posts/field-notes-swap-day.md
 - _posts/2019-03-02-elizabeth-warren.md
 - _posts/2019-02-23-long-winter.md
 - _posts/2019-02-12-25-below-1.md
