@@ -32,7 +32,7 @@ fields:
     required: true
   default: photo
 pages:
-- _posts/my-new-bag.md
+- _posts/2019-03-20-my-new-bag.md
 - _posts/2019-02-12-25-below-1.md
 - _posts/2019-03-04-field-notes-swap-day.md
 - _posts/2019-03-07-albus.md
