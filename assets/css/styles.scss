@@ -248,6 +248,9 @@ main {
   article.feature {
     text-indent: 1.5em;
 
+    a:link {
+      text-decoration: underline;
+    }
 
   }
 
@@ -276,6 +279,7 @@ main {
     p {
       text-indent: 1em;
       margin: 0;
+
     }
   }
 
