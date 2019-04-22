@@ -27,8 +27,13 @@ body {
 }
 
 ul li {
-  display: inline;
-  list-style: none;
+
+  list-style-type: square;
+  text-indent: 0;
+  margin-bottom: 15px;
+  font-size: 10.5pt;
+  line-height: 19pt;
+
 }
 
 .page-wrapper {
@@ -184,6 +189,12 @@ main {
       }
       .selected {
         text-decoration: underline;
+    }
+    ul li {
+
+      display: inline;
+      list-style-type: none;
+
     }
   }
 
