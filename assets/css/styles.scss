@@ -325,7 +325,15 @@ main {
 
   .pagination {
     text-align: center;
-      margin: 45px 0 35px 0;
+    argin: 45px 0 35px 0;
+
+     ul li {
+
+      display: inline;
+      list-style-type: none;
+
+    }
+
     .selected {
 
       a {
