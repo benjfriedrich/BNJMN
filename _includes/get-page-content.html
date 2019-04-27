@@ -18,7 +18,8 @@
   <article class="photo">
 
   <p><span class="photo-title"><a href="{{ page.url }}">{{ page.title }}</a></span> <span class="date">{{ page.date | date: "%-m/%-d/%y" }}</span></p>
-  {{ page.link | prepend: "!" | markdownify | remove_first: "<p>" | remove_last: "</p>" }}
+
+<img src="{{ site.url }}{{ page.link }}">
 
   <p class="img-caption">{{ page.content | remove_first: "<p>" | remove_last: "</p>" }}</p>
 
