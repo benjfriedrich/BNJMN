@@ -1,0 +1,11 @@
+{% if post.tag == "link" %}
+
+  <entry>
+    <title>{{ post.title }}</title>
+    <link href="{{ post.link }}"/>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>{{ site.url }}{{ post.url }}</id>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+
+{% endif %}

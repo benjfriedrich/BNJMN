@@ -1,0 +1,22 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" xml:lang="en">{{ site.title }}</title>
+  <link type="application/atom+xml" href="{{ site.url }}/feed.atom" rel="self"/>
+  <link type="text/html" href="{{ site.url }}" rel="alternate"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}/feed.atom</id>
+  <author>
+    <name>{{ site.url }}/feed</name>
+  </author>
+  <rights>Copyright (c) {{ "now" | date: '%Y' }}, Benjamin Friedrich; all rights reserved.</rights>
+
+  {% for post in site.posts limit:50 %}
+    {% include atom-photo.html %}
+    {% include atom-link.html %}
+    {% include atom-feature.html %}
+    {% include atom-aside.html %}  
+  {% endfor %}
+</feed>
