@@ -1,7 +1,7 @@
 {% if post.tag == "link" %}
 
   <entry>
-    <title>{{ post.title }}</title>
+    <title>{{ post.title | xml_escape }}</title>
     <link href="{{ post.link }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.url }}</id>
