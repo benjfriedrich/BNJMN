@@ -5,7 +5,7 @@
     <link href="{{ site.url }}{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <id>{{ site.url }}{{ post.url }}</id>
-    <content type="html"><img src="{{ site.url }}{{ post.url }}">{{ post.content | xml_escape }}</content>
+    <content type="html">&lt;img src=&quot;{{ site.url }}{{ post.url }}&quot;&gt;{{ post.content | xml_escape }}</content>
   </entry>
 
 {% endif %}
