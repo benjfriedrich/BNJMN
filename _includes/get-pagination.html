@@ -1,3 +1,5 @@
+
+
 <div class="pagination">
 
 
@@ -15,13 +17,25 @@
   {% for trail in paginator.page_trail %}
     <li {% if page.url == trail.path %}class="selected"{% endif %}>
         <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}">{{ trail.num }}</a>
-    </li>
+    </li> 
   {% endfor %}
 {% endif %}
 
 
 
+
+
 {% if paginator.next_page %}
+
+{% assign page = paginator.page %}
+{% assign limiter = paginator.total_pages | minus: site.pagination.trail.after %}
+
+
+{% if page < limiter %}
+...
+{% endif %}
+
+
 <li>
   <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">&nbsp;>></a>
 </li>

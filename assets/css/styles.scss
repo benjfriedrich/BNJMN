@@ -277,11 +277,13 @@ main {
 
   article.photo {
     .img-caption {
-      margin: 0 0 15px 0;
+      margin: 7px 0 15px 0;
       font-style: italic;
       font-weight: lighter;
-      padding-right: 1.5em;
-      text-align: right;
+      padding-left: .5em;
+      text-align: left;
+      line-height: 1.4em;
+      font-size: 9.5pt;
     }
     .photo-title {
       font-family: $title-font-stack;
