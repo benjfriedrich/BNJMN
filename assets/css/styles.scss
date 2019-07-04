@@ -234,6 +234,7 @@ main {
   margin-top: 30px;
   font-family: $title-font-stack;
   text-align: center;
+  text-indent: 0;
   @media screen and (min-width:$break-full) {
         margin-bottom: 30px;
         margin-top: 45px;
