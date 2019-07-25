@@ -7,7 +7,6 @@ function imgLoader() {
 
 	function load(i) {
 
-
 		imgList[i].src = imgList[i].dataset.imgsrc;
 		
 		if ( i + 1 < imgListLength ) {
