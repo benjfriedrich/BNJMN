@@ -33,6 +33,8 @@ plugins:
 
   - jekyll-paginate-v2
 
+include: [_redirects]
+
 
 ############################################################
 # Site configuration for the Jekyll 3 Pagination Gem
@@ -92,7 +94,7 @@ pagination:
   # Without file extension
   indexpage: 'index'
 
-  include: _redirects
+
 
 
   
