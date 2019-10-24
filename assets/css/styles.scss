@@ -12,17 +12,33 @@ $break-full: 600px;
   padding: 0;
 }
 
+
+
 html {
   height: 100%;
   margin: 0;
 }
 
+
 body {
   font-family: $font-stack;
-  background: white;
   max-width: 500px;
   margin: 0px auto;
   padding: 15px 15px 0px 15px;
+
+  @media (prefers-color-scheme: dark) {
+
+    background-color: black;
+    color: white;
+
+  }
+
+  @media (prefers-color-scheme: light) {
+
+    background-color: black;
+    color: white;
+
+  }
 
 }
 
@@ -100,6 +116,30 @@ a:active {
   text-decoration: none;
 }
 
+@media (prefers-color-scheme: dark) {
+
+        a:link {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: grey;
+        text-decoration: underline;
+      }
+
+      a:active {
+        color: grey;
+        text-decoration: none;
+      }
+
+}
+
 .date {
   font-family: $font-stack;
   font-size: 10pt;
@@ -126,12 +166,58 @@ header {
     margin: 120px 0 120px 0;
   }
 
+.navigation {
 
-  img.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.nav-items {
+
+  flex-grow: 1;
+}
+
+.logo-wrapper {
+  flex-grow: 1;
+
+  @media screen and (min-width:$break-full) {
+
+    flex-grow: .8;
+  }
+ 
+
+
+
+}
+
+.logo {
+
     height: 100%;
+    width: 100%;
 
     float: left;
     margin: 0 9px 0 0;
+    padding-right: 0 9px 0 0 ;
+
+    background-image: url(/assets/bnjmn_logo.svg);
+    
+    background-position: left; 
+    background-repeat: no-repeat; 
+    background-size: contain;
+
+    @media (prefers-color-scheme: light) {
+
+      background-image: url(/assets/bnjmn_logo.svg);
+
+    }
+
+    @media (prefers-color-scheme: dark) {
+
+      background-image: url(/assets/bnjmn_logo_white.svg);
+
+    }
 
     @media screen and (min-width:$break-full) {
       margin: 0 15px 0 0;
