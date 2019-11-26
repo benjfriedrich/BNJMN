@@ -31,7 +31,7 @@ body {
 
   @media (prefers-color-scheme: dark) {
 
-    background-color: black;
+    background-color: #000;
     color: white;
 
   }
@@ -204,7 +204,7 @@ header {
     margin: 0 9px 0 0;
     padding-right: 0 9px 0 0 ;
 
-    background-image: url(/assets/bnjmn_logo.svg);
+    background-image: url(/assets/bnjmn_logo2.svg);
     
     background-position: left; 
     background-repeat: no-repeat; 
@@ -212,13 +212,13 @@ header {
 
     @media (prefers-color-scheme: light) {
 
-      background-image: url(/assets/bnjmn_logo.svg);
+      background-image: url(/assets/bnjmn_logo2.svg);
 
     }
 
     @media (prefers-color-scheme: dark) {
 
-      background-image: url(/assets/bnjmn_logo_white.svg);
+      background-image: url(/assets/bnjmn_logo2_white.svg);
 
     }
 
