@@ -5,7 +5,7 @@ permalink: /about/
 ---
 I'm Benjamin. Hi there!
 
-Time was, everyone had a personal web log, and that's what this is. This website is my main landing page—the central repository for my online life.
+Time was, everyone had a web log, and I guess this is a version of that. This website is my main landing page—the central repository for my online life.
 
 This isn't here for pageveiws. It's just a way to mark my passing through the digital ether.
 
